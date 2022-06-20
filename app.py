@@ -11,4 +11,9 @@ speaker = pyttsx3.init()
 for line in content.splitlines():
     speaker.say(line)
     speaker.runAndWait()
-    
+
+#to save the audio file
+speaker.save_to_file('AND.mp3')
+speaker.runAndWait()
+speaker.stop()
+
